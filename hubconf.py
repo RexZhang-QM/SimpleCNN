@@ -1,8 +1,7 @@
-# hubconf.py
 dependencies = ['torch']
 
-
-def simple_model(input_size=10, hidden_size=50, num_classes=10, **kwargs):
-    """Load the SimpleModel."""
-    model = SimpleModel(input_size, hidden_size, num_classes)
+# 定义加载 SimpleCNN 模型的函数
+def simple_model(num_classes=10, **kwargs):
+    """加载 SimpleCNN 模型."""
+    model = SimpleCNN(num_classes=num_classes)
     return model
